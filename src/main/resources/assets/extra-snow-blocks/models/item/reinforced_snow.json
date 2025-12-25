@@ -1,0 +1,6 @@
+{
+  "parent" : "minecraft:item/generated",
+  "textures" : {
+    "layer0" : "extra-snow-blocks:item/reinforced_snow"
+  }
+}
