@@ -1,0 +1,16 @@
+{
+    "type" : "minecraft:crafting_shaped",
+    "pattern" : [
+        "###",
+        "#G#",
+        "###"
+    ],
+    "key" : {
+        "#": "minecraft:snowball",
+        "G": "minecraft:gravel"
+    },
+    "result": {
+        "id" : "extra-snow-blocks:reinforced_snow",
+        "count" : 8
+    }
+}
