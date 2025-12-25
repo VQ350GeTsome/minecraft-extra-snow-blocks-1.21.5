@@ -46,16 +46,22 @@ public class snowBlocks {
         return RegistryKey.of(RegistryKeys.ITEM, Identifier.of(ExtraSnowBlocks.MOD_ID, name));
     }
 
-    private static final AbstractBlock.Settings REINFORCED_SNOW_BLOCK_SETTINGS = AbstractBlock.Settings.copy(Blocks.STONE_BRICKS);
-
-    public static final Block COBBLED_REINFORCED_SNOW = snowBlocks.register(
-            "cobbled_reinforced_snow",
-            Block::new,
-            REINFORCED_SNOW_BLOCK_SETTINGS
-        );
+    public static final Block
+        COMPACTED_REINFORCED_SNOW = snowBlocks.register(
+                "compacted_reinforced_snow",
+                Block::new,
+                AbstractBlock.Settings.copy(Blocks.GRAVEL)
+            ),
+        REINFORCED_SNOW_BRICK = snowBlocks.register(
+          "reinforced_snow_brick",
+                Block::new,
+                AbstractBlock.Settings.copy(Blocks.STONE_BRICKS)
+            );
 
     public static void initSnowBlocks() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
-                .register((itemGroup) -> itemGroup.add(snowBlocks.COBBLED_REINFORCED_SNOW));
+                .register((itemGroup) -> itemGroup.add(snowBlocks.COMPACTED_REINFORCED_SNOW));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(snowBlocks.REINFORCED_SNOW_BRICK));
     }
 }

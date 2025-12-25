@@ -1,5 +1,9 @@
 {
   "item.extra-snow-blocks.reinforced_snow" : "Reinforced Snow",
 
-  "block.extra-snow-blocks.cobbled_reinforced_snow" : "Cobbled Reinforced Snow"
+  "item.extra-snow-blocks.compacted_reinforced_snow" : "Compacted Reinforced Snow",
+  "block.extra-snow-blocks.compacted_reinforced_snow" : "Compacted Reinforced Snow",
+
+  "item.extra-snow-blocks.reinforced_snow_bricks" : "Reinforced Snow Bricks",
+  "block.extra-snow-blocks.reinforced_snow_bricks" : "Reinforced Snow Bricks"
 }
