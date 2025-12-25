@@ -1,5 +1,8 @@
 package vq350.getsome;
 
+import vq350.getsome.init.SnowBlocks;
+import vq350.getsome.init.SnowItems;
+
 public class ExtraSnowBlocks implements net.fabricmc.api.ModInitializer {
 
 	public static final String MOD_ID = "extra-snow-blocks";
@@ -11,8 +14,8 @@ public class ExtraSnowBlocks implements net.fabricmc.api.ModInitializer {
 		LOGGER.info("Loading Extra Snow Items");
 
 		// Initialize extra snow items
-		vq350.getsome.init.snowItems.initSnowItems();
+		SnowItems.initSnowItems();
 		// Initialize extra snow blocks
-		vq350.getsome.init.snowBlocks.initSnowBlocks();
+		SnowBlocks.initSnowBlocks();
 	}
 }

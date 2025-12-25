@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "extra-snow-blocks:block/oak_doweled_reinforced_snow_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "extra-snow-blocks:block/oak_doweled_reinforced_snow"
+    },
+    "axis=z": {
+      "model": "extra-snow-blocks:block/oak_doweled_reinforced_snow_horizontal",
+      "x": 90
+    }
+  }
+}

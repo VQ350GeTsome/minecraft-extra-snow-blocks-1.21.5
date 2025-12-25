@@ -10,11 +10,11 @@ import net.minecraft.util.Identifier;
 
 import vq350.getsome.ExtraSnowBlocks;
 
-public class snowBlocks {
+public class SnowBlocks {
 
     // If not specificed, we will assume we must register the item too.
     private static Block register(String name, java.util.function.Function<AbstractBlock.Settings, Block> blockFactory, AbstractBlock.Settings settings) {
-        return snowBlocks.register(name, blockFactory, settings, true);
+        return SnowBlocks.register(name, blockFactory, settings, true);
     }
 
     private static Block register(String name, java.util.function.Function<AbstractBlock.Settings, Block> blockFactory,
@@ -47,21 +47,28 @@ public class snowBlocks {
     }
 
     public static final Block
-        COMPACTED_REINFORCED_SNOW = snowBlocks.register(
+        COMPACTED_REINFORCED_SNOW = SnowBlocks.register(
                 "compacted_reinforced_snow",
                 Block::new,
                 AbstractBlock.Settings.copy(Blocks.GRAVEL)
-            ),
-        REINFORCED_SNOW_BRICK = snowBlocks.register(
-          "reinforced_snow_brick",
+        ),
+        REINFORCED_SNOW_BRICKS = SnowBlocks.register(
+          "reinforced_snow_bricks",
                 Block::new,
                 AbstractBlock.Settings.copy(Blocks.STONE_BRICKS)
-            );
+        ),
+        OAK_DOWELED_REINFORCED_SNOW = SnowBlocks.register(
+                "oak_doweled_reinforced_snow",
+                PillarBlock::new,
+                AbstractBlock.Settings.copy(Blocks.OAK_LOG)
+        );
 
     public static void initSnowBlocks() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
-                .register((itemGroup) -> itemGroup.add(snowBlocks.COMPACTED_REINFORCED_SNOW));
+                .register((itemGroup) -> itemGroup.add(SnowBlocks.COMPACTED_REINFORCED_SNOW));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
-                .register((itemGroup) -> itemGroup.add(snowBlocks.REINFORCED_SNOW_BRICK));
+                .register((itemGroup) -> itemGroup.add(SnowBlocks.REINFORCED_SNOW_BRICKS));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(SnowBlocks.OAK_DOWELED_REINFORCED_SNOW));
     }
 }

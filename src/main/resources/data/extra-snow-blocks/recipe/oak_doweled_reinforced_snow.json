@@ -1,0 +1,16 @@
+{
+  "type" : "minecraft:crafting_shaped",
+  "pattern" : [
+    " L ",
+    "L#L",
+    " L "
+  ],
+  "key" : {
+    "L": { "tag": "minecraft:oak_logs" },
+    "#": "extra-snow-blocks:compacted_reinforced_snow"
+  },
+  "result": {
+    "id" : "extra-snow-blocks:oak_doweled_reinforced_snow",
+    "count" : 4
+  }
+}

@@ -3,7 +3,7 @@ package vq350.getsome.init;
 import net.minecraft.item.*;
 import net.minecraft.registry.*;
 
-public class snowItems {
+public class SnowItems {
 
     public static Item register(String name, java.util.function.Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
         // Create the item key.
@@ -18,12 +18,12 @@ public class snowItems {
         return item;
     }
 
-    public static final Item REINFORCED_SNOW = snowItems.register("reinforced_snow", Item::new, new Item.Settings());
+    public static final Item REINFORCED_SNOW = SnowItems.register("reinforced_snow", Item::new, new Item.Settings());
 
     public static void initSnowItems() {
         // Add reinforced snow to the ingredients group.
         net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
-                .register((itemGroup) -> itemGroup.add(snowItems.REINFORCED_SNOW));
+                .register((itemGroup) -> itemGroup.add(SnowItems.REINFORCED_SNOW));
     }
 
 }
