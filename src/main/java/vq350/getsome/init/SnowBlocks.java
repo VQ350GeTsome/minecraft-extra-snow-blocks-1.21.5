@@ -46,22 +46,69 @@ public class SnowBlocks {
         return RegistryKey.of(RegistryKeys.ITEM, Identifier.of(ExtraSnowBlocks.MOD_ID, name));
     }
 
+    //<editor-fold defaultstate="collapsed" desc=" Blocks ">
     public static final Block
-        COMPACTED_REINFORCED_SNOW = SnowBlocks.register(
-                "compacted_reinforced_snow",
-                Block::new,
-                AbstractBlock.Settings.copy(Blocks.GRAVEL)
-        ),
-        REINFORCED_SNOW_BRICKS = SnowBlocks.register(
-          "reinforced_snow_bricks",
-                Block::new,
-                AbstractBlock.Settings.copy(Blocks.STONE_BRICKS)
-        ),
-        OAK_DOWELED_REINFORCED_SNOW = SnowBlocks.register(
-                "oak_doweled_reinforced_snow",
-                PillarBlock::new,
-                AbstractBlock.Settings.copy(Blocks.OAK_LOG)
-        );
+            COMPACTED_REINFORCED_SNOW = SnowBlocks.register(
+                    "compacted_reinforced_snow",
+                    Block::new,
+                    AbstractBlock.Settings.copy(Blocks.GRAVEL)
+            ),
+            REINFORCED_SNOW_BRICKS = SnowBlocks.register(
+              "reinforced_snow_bricks",
+                    Block::new,
+                    AbstractBlock.Settings.copy(Blocks.STONE_BRICKS)
+            ),
+            OAK_DOWELED_REINFORCED_SNOW = SnowBlocks.register(
+                    "oak_doweled_reinforced_snow",
+                    PillarBlock::new,
+                    AbstractBlock.Settings.copy(Blocks.OAK_LOG)
+            ),
+            BIRCH_DOWELED_REINFORCED_SNOW = SnowBlocks.register(
+                    "birch_doweled_reinforced_snow",
+                    PillarBlock::new,
+                    AbstractBlock.Settings.copy(Blocks.OAK_LOG)
+            ),
+            SPRUCE_DOWELED_REINFORCED_SNOW = SnowBlocks.register(
+                    "spruce_doweled_reinforced_snow",
+                    PillarBlock::new,
+                    AbstractBlock.Settings.copy(Blocks.OAK_LOG)
+            ),
+            ACACIA_DOWELED_REINFORCED_SNOW = SnowBlocks.register(
+                    "acacia_doweled_reinforced_snow",
+                    PillarBlock::new,
+                    AbstractBlock.Settings.copy(Blocks.OAK_LOG)
+            ),
+            JUNGLE_DOWELED_REINFORCED_SNOW = SnowBlocks.register(
+                    "JUNGLE_doweled_reinforced_snow",
+                    PillarBlock::new,
+                    AbstractBlock.Settings.copy(Blocks.OAK_LOG)
+            ),
+            DARK_OAK_DOWELED_REINFORCED_SNOW = SnowBlocks.register(
+                    "dark_oak_doweled_reinforced_snow",
+                    PillarBlock::new,
+                    AbstractBlock.Settings.copy(Blocks.OAK_LOG)
+            ),
+            CHERRY_DOWELED_REINFORCED_SNOW = SnowBlocks.register(
+                    "cherry_doweled_reinforced_snow",
+                    PillarBlock::new,
+                    AbstractBlock.Settings.copy(Blocks.OAK_LOG)
+            ),
+            MANGROVE_DOWELED_REINFORCED_SNOW = SnowBlocks.register(
+                    "mangrove_doweled_reinforced_snow",
+                    PillarBlock::new,
+                    AbstractBlock.Settings.copy(Blocks.OAK_LOG)
+            ),
+            WARPED_DOWELED_REINFORCED_SNOW = SnowBlocks.register(
+                    "warped_doweled_reinforced_snow",
+                    PillarBlock::new,
+                    AbstractBlock.Settings.copy(Blocks.OAK_LOG)
+            ),
+            CRIMSON_DOWELED_REINFORCED_SNOW = SnowBlocks.register(
+                    "crimson_doweled_reinforced_snow",
+                    PillarBlock::new,
+                    AbstractBlock.Settings.copy(Blocks.OAK_LOG)
+            );
+    //</editor-fold>
 
     public static void initSnowBlocks() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
@@ -70,5 +117,24 @@ public class SnowBlocks {
                 .register((itemGroup) -> itemGroup.add(SnowBlocks.REINFORCED_SNOW_BRICKS));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register((itemGroup) -> itemGroup.add(SnowBlocks.OAK_DOWELED_REINFORCED_SNOW));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(SnowBlocks.BIRCH_DOWELED_REINFORCED_SNOW));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(SnowBlocks.SPRUCE_DOWELED_REINFORCED_SNOW));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(SnowBlocks.ACACIA_DOWELED_REINFORCED_SNOW));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(SnowBlocks.JUNGLE_DOWELED_REINFORCED_SNOW));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(SnowBlocks.DARK_OAK_DOWELED_REINFORCED_SNOW));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(SnowBlocks.CHERRY_DOWELED_REINFORCED_SNOW));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(SnowBlocks.MANGROVE_DOWELED_REINFORCED_SNOW));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(SnowBlocks.WARPED_DOWELED_REINFORCED_SNOW));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(SnowBlocks.CRIMSON_DOWELED_REINFORCED_SNOW));
+
     }
 }
