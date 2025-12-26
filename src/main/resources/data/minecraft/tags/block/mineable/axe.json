@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "extra-snow-blocks:oak_doweled_reinforced_snow",
+    "extra-snow-blocks:birch_doweled_reinforced_snow",
+    "extra-snow-blocks:dark_oak_doweled_reinforced_snow",
+    "extra-snow-blocks:spruce_doweled_reinforced_snow",
+    "extra-snow-blocks:jungle_doweled_reinforced_snow",
+    "extra-snow-blocks:cherry_doweled_reinforced_snow",
+    "extra-snow-blocks:crimson_doweled_reinforced_snow",
+    "extra-snow-blocks:warped_doweled_reinforced_snow",
+    "extra-snow-blocks:mangrove_doweled_reinforced_snow",
+
+    "extra-snow-blocks:frosted_log"
+  ]
+}

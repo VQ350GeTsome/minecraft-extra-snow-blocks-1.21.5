@@ -12,7 +12,7 @@ import vq350.getsome.ExtraSnowBlocks;
 
 public class SnowBlocks {
 
-    // If not specificed, we will assume we must register the item too.
+    // If not specified, we will assume we must register the item too.
     private static Block register(String name, java.util.function.Function<AbstractBlock.Settings, Block> blockFactory, AbstractBlock.Settings settings) {
         return SnowBlocks.register(name, blockFactory, settings, true);
     }
@@ -57,12 +57,12 @@ public class SnowBlocks {
             REINFORCED_SNOW_BRICKS = SnowBlocks.register(
               "reinforced_snow_bricks",
                     Block::new,
-                    AbstractBlock.Settings.copy(Blocks.STONE_BRICKS)
+                    AbstractBlock.Settings.copy(Blocks.STONE_BRICKS).requiresTool()
             ),
             REINFORCED_SNOW_TILES = SnowBlocks.register(
                     "reinforced_snow_tiles",
                     Block::new,
-                    AbstractBlock.Settings.copy(Blocks.DEEPSLATE_TILES)
+                    AbstractBlock.Settings.copy(Blocks.DEEPSLATE_TILES).requiresTool()
             ),
 
             OAK_DOWELED_REINFORCED_SNOW = SnowBlocks.register(
@@ -119,7 +119,7 @@ public class SnowBlocks {
             PERMAFROST = SnowBlocks.register(
                     "permafrost",
                     Block::new,
-                    AbstractBlock.Settings.copy(Blocks.DIRT)
+                    AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()
             ),
             FROSTED_LOG = SnowBlocks.register(
                     "frosted_log",

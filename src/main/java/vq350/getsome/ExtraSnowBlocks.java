@@ -17,5 +17,6 @@ public class ExtraSnowBlocks implements net.fabricmc.api.ModInitializer {
 		SnowItems.initSnowItems();
 		// Initialize extra snow blocks
 		SnowBlocks.initSnowBlocks();
+
 	}
 }

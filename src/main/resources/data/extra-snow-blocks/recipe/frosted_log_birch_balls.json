@@ -1,0 +1,16 @@
+{
+  "type" : "minecraft:crafting_shaped",
+  "pattern" : [
+    " S ",
+    "SDS",
+    " S "
+  ],
+  "key" : {
+    "D": "minecraft:birch_log",
+    "S": "minecraft:snowball"
+  },
+  "result": {
+    "id" : "extra-snow-blocks:permafrost",
+    "count" : 2
+  }
+}
