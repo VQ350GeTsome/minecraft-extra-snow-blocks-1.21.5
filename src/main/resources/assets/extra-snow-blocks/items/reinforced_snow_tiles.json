@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "extra-snow-blocks:block/reinforced_snow_tiles"
+  }
+}

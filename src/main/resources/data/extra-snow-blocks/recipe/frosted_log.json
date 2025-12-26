@@ -1,0 +1,11 @@
+{
+  "type" : "minecraft:crafting_shapeless",
+  "ingredients" : [
+    "minecraft:oak_log",
+    "minecraft:snow"
+  ],
+  "result": {
+    "id" : "extra-snow-blocks:frosted_log",
+    "count" : 2
+  }
+}

@@ -47,6 +47,7 @@ public class SnowBlocks {
     }
 
     //<editor-fold defaultstate="collapsed" desc=" Blocks ">
+
     public static final Block
             COMPACTED_REINFORCED_SNOW = SnowBlocks.register(
                     "compacted_reinforced_snow",
@@ -58,6 +59,12 @@ public class SnowBlocks {
                     Block::new,
                     AbstractBlock.Settings.copy(Blocks.STONE_BRICKS)
             ),
+            REINFORCED_SNOW_TILES = SnowBlocks.register(
+                    "reinforced_snow_tiles",
+                    Block::new,
+                    AbstractBlock.Settings.copy(Blocks.DEEPSLATE_TILES)
+            ),
+
             OAK_DOWELED_REINFORCED_SNOW = SnowBlocks.register(
                     "oak_doweled_reinforced_snow",
                     PillarBlock::new,
@@ -107,7 +114,19 @@ public class SnowBlocks {
                     "crimson_doweled_reinforced_snow",
                     PillarBlock::new,
                     AbstractBlock.Settings.copy(Blocks.OAK_LOG)
+            ),
+
+            PERMAFROST = SnowBlocks.register(
+                    "permafrost",
+                    Block::new,
+                    AbstractBlock.Settings.copy(Blocks.DIRT)
+            ),
+            FROSTED_LOG = SnowBlocks.register(
+                    "frosted_log",
+                    PillarBlock::new,
+                    AbstractBlock.Settings.copy(Blocks.OAK_LOG)
             );
+
     //</editor-fold>
 
     public static void initSnowBlocks() {
@@ -135,6 +154,11 @@ public class SnowBlocks {
                 .register((itemGroup) -> itemGroup.add(SnowBlocks.WARPED_DOWELED_REINFORCED_SNOW));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register((itemGroup) -> itemGroup.add(SnowBlocks.CRIMSON_DOWELED_REINFORCED_SNOW));
-
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(SnowBlocks.PERMAFROST));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(SnowBlocks.REINFORCED_SNOW_TILES));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(SnowBlocks.FROSTED_LOG));
     }
 }

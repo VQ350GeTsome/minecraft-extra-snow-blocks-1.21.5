@@ -1,0 +1,15 @@
+{
+  "type" : "minecraft:crafting_shaped",
+  "pattern" : [
+    " # ",
+    "# #",
+    " # "
+  ],
+  "key" : {
+    "#": "extra-snow-blocks:compacted_reinforced_snow"
+  },
+  "result": {
+    "id" : "extra-snow-blocks:reinforced_snow_tiles",
+    "count" : 4
+  }
+}

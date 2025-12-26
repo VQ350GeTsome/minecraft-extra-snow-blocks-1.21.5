@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "extra-snow-blocks:block/frosted_log_top",
+    "side": "extra-snow-blocks:block/frosted_log"
+  }
+}

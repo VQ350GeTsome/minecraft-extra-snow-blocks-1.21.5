@@ -1,0 +1,11 @@
+{
+  "type" : "minecraft:crafting_shapeless",
+  "ingredients" : [
+    "minecraft:dirt",
+    "minecraft:snow"
+  ],
+  "result": {
+    "id" : "extra-snow-blocks:permafrost",
+    "count" : 2
+  }
+}
