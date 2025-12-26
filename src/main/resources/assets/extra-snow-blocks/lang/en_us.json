@@ -48,5 +48,8 @@
   "block.extra-snow-blocks.permafrost" : "Permafrost",
 
   "item.extra-snow-blocks.frosted_log" : "Frosted Log",
-  "block.extra-snow-blocks.frosted_log" : "Frosted Log"
+  "block.extra-snow-blocks.frosted_log" : "Frosted Log",
+
+  "item.extra-snow-blocks.frosted_planks" : "Frosted Planks",
+  "block.extra-snow-blocks.frosted_planks" : "Frosted Planks"
 }

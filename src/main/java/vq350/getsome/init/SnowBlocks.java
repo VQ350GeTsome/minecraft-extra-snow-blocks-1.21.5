@@ -54,16 +54,20 @@ public class SnowBlocks {
                     Block::new,
                     AbstractBlock.Settings.copy(Blocks.GRAVEL)
             ),
+
             REINFORCED_SNOW_BRICKS = SnowBlocks.register(
               "reinforced_snow_bricks",
                     Block::new,
                     AbstractBlock.Settings.copy(Blocks.STONE_BRICKS).requiresTool()
             ),
+
             REINFORCED_SNOW_TILES = SnowBlocks.register(
                     "reinforced_snow_tiles",
                     Block::new,
                     AbstractBlock.Settings.copy(Blocks.DEEPSLATE_TILES).requiresTool()
             ),
+
+
 
             OAK_DOWELED_REINFORCED_SNOW = SnowBlocks.register(
                     "oak_doweled_reinforced_snow",
@@ -116,15 +120,23 @@ public class SnowBlocks {
                     AbstractBlock.Settings.copy(Blocks.OAK_LOG)
             ),
 
+
+
             PERMAFROST = SnowBlocks.register(
                     "permafrost",
                     Block::new,
                     AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()
             ),
+
             FROSTED_LOG = SnowBlocks.register(
                     "frosted_log",
                     PillarBlock::new,
                     AbstractBlock.Settings.copy(Blocks.OAK_LOG)
+            ),
+            FROSTED_PLANKS = SnowBlocks.register(
+                    "frosted_planks",
+                    Block::new,
+                    AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)
             );
 
     //</editor-fold>
@@ -132,8 +144,21 @@ public class SnowBlocks {
     public static void initSnowBlocks() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register((itemGroup) -> itemGroup.add(SnowBlocks.COMPACTED_REINFORCED_SNOW));
+
+        // Bricks
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register((itemGroup) -> itemGroup.add(SnowBlocks.REINFORCED_SNOW_BRICKS));
+
+        // Tiles
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(SnowBlocks.REINFORCED_SNOW_TILES));
+
+        // Planks
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(SnowBlocks.FROSTED_PLANKS));
+
+
+        // Doweled Snow
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register((itemGroup) -> itemGroup.add(SnowBlocks.OAK_DOWELED_REINFORCED_SNOW));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
@@ -154,11 +179,12 @@ public class SnowBlocks {
                 .register((itemGroup) -> itemGroup.add(SnowBlocks.WARPED_DOWELED_REINFORCED_SNOW));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register((itemGroup) -> itemGroup.add(SnowBlocks.CRIMSON_DOWELED_REINFORCED_SNOW));
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+
+
+        // Natural
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL)
                 .register((itemGroup) -> itemGroup.add(SnowBlocks.PERMAFROST));
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
-                .register((itemGroup) -> itemGroup.add(SnowBlocks.REINFORCED_SNOW_TILES));
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL)
                 .register((itemGroup) -> itemGroup.add(SnowBlocks.FROSTED_LOG));
     }
 }
