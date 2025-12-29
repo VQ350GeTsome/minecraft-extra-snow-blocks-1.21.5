@@ -71,7 +71,11 @@ public class SnowBlocks {
                     Block::new,
                     AbstractBlock.Settings.copy(Blocks.DEEPSLATE_TILES).requiresTool()
             ),
-
+            REINFORCED_SNOW_TILES_SLAB = SnowBlocks.register(
+                    "reinforced_snow_tiles_slab",
+                    SlabBlock::new,
+                    AbstractBlock.Settings.copy(Blocks.DEEPSLATE_TILES).requiresTool()
+            ),
 
 
             OAK_DOWELED_REINFORCED_SNOW = SnowBlocks.register(
@@ -159,6 +163,8 @@ public class SnowBlocks {
         // Tiles
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register((itemGroup) -> itemGroup.add(SnowBlocks.REINFORCED_SNOW_TILES));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(SnowBlocks.REINFORCED_SNOW_TILES_SLAB));
 
         // Planks
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "extra-snow-blocks:reinforced_snow_bricks_slab",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2,
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "extra-snow-blocks:reinforced_snow_bricks_slab",
+                  "properties": { "type": "double" }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "extra-snow-blocks:block/reinforced_snow_tiles_slab"
+    },
+    "type=double": {
+      "model": "extra-snow-blocks:block/reinforced_snow_tiles"
+    },
+    "type=top": {
+      "model": "extra-snow-blocks:block/reinforced_snow_tiles_slab_top"
+    }
+  }
+}
