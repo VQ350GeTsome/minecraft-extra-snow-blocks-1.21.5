@@ -3,9 +3,11 @@
   "values": [
     "my-enhanced:reinforced_snow_bricks",
     "my-enhanced:reinforced_snow_bricks_slab",
+    "my-enhanced:reinforced_snow_bricks_stairs",
 
     "my-enhanced:reinforced_snow_tiles",
     "my-enhanced:reinforced_snow_tiles_slab",
+    "my-enhanced:reinforced_snow_tiles_stairs",
 
     "my-enhanced:permafrost"
   ]

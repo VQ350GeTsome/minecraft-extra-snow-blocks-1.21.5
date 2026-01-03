@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "my-enhanced:compacted_reinforced_snow",
+  "result": {
+    "id": "my-enhanced:reinforced_snow_bricks_stairs",
+    "count": 1
+  }
+}
